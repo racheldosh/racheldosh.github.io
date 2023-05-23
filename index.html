@@ -1,0 +1,16 @@
+<p style="display:none" id="cluetext">Listen to this:</p>
+<audio controls style="display:none" id="clueaudio">
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<input type="text" id="clueinput">
+<button type="button" id="cluebutton" onclick="myFunction()">Go</>
+
+<script>
+function myFunction() {
+	if (document.getElementById("clueinput").value == "a picture") {
+		document.getElementById("cluetext").style.display = "block";
+		document.getElementById("clueaudio").style.display = "block";
+    }
+}
+</script>
